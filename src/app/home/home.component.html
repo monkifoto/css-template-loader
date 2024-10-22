@@ -1,0 +1,38 @@
+<header>
+  <h1>McCurry</h1>
+</header>
+<main>
+  <section class="hero">
+      <div class="hero-content">
+          <h2>Welcome to McCurry</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+  </section>
+  <section class="gallery">
+      <h2>Select Works</h2>
+      <div class="gallery-grid">
+          <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 1">
+          </div>
+          <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 2">
+          </div>
+          <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 3">
+          </div>
+          <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 4">
+          </div>
+      </div>
+  </section>
+  <section class="template-selector">
+      <h2>Select a CSS Template</h2>
+      <ul>
+          @for (template of templates; track template) {
+              <li>
+                  <button (click)="applyTemplate(template.css)">{{ template.name }}</button>
+              </li>
+          }
+      </ul>
+  </section>
+</main>

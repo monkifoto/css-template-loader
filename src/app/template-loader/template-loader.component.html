@@ -1,0 +1,13 @@
+<div>
+  <h2>Select a CSS Template</h2>
+  <ul>
+    <li *ngFor="let template of templates">
+      <button (click)="applyTemplate(template.css)">{{ template.name }}</button>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h3>Preview</h3>
+  <p>This is a preview of the selected template.</p>
+</div>
